@@ -16,7 +16,7 @@ VOLUME ["/data/db"]
 WORKDIR /data
 
 # Define default command.
-CMD ["mongod --rest --httpinterface"]
+CMD ["mongod", "--rest", "--httpinterface"]
 
 # Expose ports.
 #   - 27017: process
