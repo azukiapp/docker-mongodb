@@ -40,7 +40,7 @@ systems({
       http: "28017:28017/tcp",
     },
     http      : {
-      // aircrm-mongodb.azk.dev
+      // mongodb.azk.dev
       domains: [ "#{manifest.dir}-#{system.name}.#{azk.default_domain}" ],
     },
     export_envs        : {
