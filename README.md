@@ -7,7 +7,7 @@ MongoDB versions (tags)
 ---
 
 <versions>
-- [`latest`](https://github.com/azukiapp/docker-mongodb/blob/master/Dockerfile)
+- [`latest`](https://github.com/azukiapp/docker-mongodb/blob/master/latest/Dockerfile)
 </versions>
 
 Image content:
