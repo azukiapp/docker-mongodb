@@ -7,7 +7,12 @@ MongoDB versions (tags)
 ---
 
 <versions>
-- [`latest`](https://github.com/azukiapp/docker-mongodb/blob/master/latest/Dockerfile)
+- [`2.2.7`, `2.2`](https://github.com/azukiapp/docker-mongodb/blob/master/2.2/Dockerfile)
+- [`2.4.17`, `2.4`](https://github.com/azukiapp/docker-mongodb/blob/master/2.4/Dockerfile)
+- [`2.6.11`, `2.6`, `2`](https://github.com/azukiapp/docker-mongodb/blob/master/2.6/Dockerfile)
+- [`3.0.7`, `3.0`, `3`, 'latest'](https://github.com/azukiapp/docker-mongodb/blob/master/3.0/Dockerfile)
+- [`3.1.9`, `3.1`](https://github.com/azukiapp/docker-mongodb/blob/master/3.1/Dockerfile)
+- [`3.2.0-rc2`, `3.2.0`, `3.2`, `3.2-rc2`](https://github.com/azukiapp/docker-mongodb/blob/master/3.2/Dockerfile)
 </versions>
 
 Image content:
