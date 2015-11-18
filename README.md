@@ -30,21 +30,22 @@ systems({
   mongodb: {
     image : { docker: "azukiapp/mongodb" },
     scalable: false,
-    wait: {"retry": 20, "timeout": 1000},
+    wait: 20,
     // Mounts folders to assigned paths
     mounts: {
-      // equivalent persistent_folders
+      // to keep data between the executions
       '/data/db': persistent('mongodb-#{manifest.dir}'),
     },
     ports: {
-      http: "28017:28017/tcp",
+      http: "28017/tcp",
+      data: "27017/tcp",
     },
     http      : {
       // mongodb.azk.dev
       domains: [ "#{manifest.dir}-#{system.name}.#{azk.default_domain}" ],
     },
     export_envs        : {
-      MONGODB_URI: "mongodb://#{net.host}:#{net.port[27017]}/#{manifest.dir}_development",
+      MONGODB_URI: "mongodb://#{net.host}:#{net.port.data}/#{manifest.dir}_development",
     },
   },
 });
